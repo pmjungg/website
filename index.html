@@ -17,16 +17,16 @@
             minute: 'numeric',
             second: 'numeric',
         },
-        formatter = new Intl.DateTimeFormat([], options);
-    
+            formatter = new Intl.DateTimeFormat([], options);
+
         // set time
         setInterval(
             () => {
                 document.querySelector("#time").innerText = formatter.format(new Date());
             }
-        , 1000)
+            , 1000)
     </script>
-    
+
 </head>
 
 <br>
@@ -50,34 +50,29 @@
     <p>
         <span id=timezone>
             <i>
-                <a href="https://24timezones.com/Richmond/time">Time in Richmond</a> - <span
-                    id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/edt">EDT</a>
+                <a href="https://24timezones.com/Richmond/time">Time in Richmond</a> - <span id="time">0:00 PM</span> <a
+                    href="https://24timezones.com/time-zone/edt">EDT</a>
             </i>
         </span>
     </p>
-    
+
     <p>
         <a href="info.html" alt="info"> info</a> |
         <a href="contact.html" alt="contact"> contact</a>
     </p>
 
     <br>
+    <br>
 
     <p>
-    <ul>
-        <li>
-            <a href="https://drive.google.com/file/d/1AiwXygyDIPycmHmh1f2zvjBd7wznfqO5/view?usp=sharing">pauline's zen
-                planner</a>
+        <a href="https://drive.google.com/file/d/1AiwXygyDIPycmHmh1f2zvjBd7wznfqO5/view?usp=sharing">pauline's zen
+            planner</a>
+        <i>last updated: 06.28.24</i>
 
-            <i>last updated: 06.28.24</i>
-        </li>
+        <br>
 
-        <li>
-            <a href="myhabittracker.html"> my habit tracker</a>
-
-            <i>automatically updated</i>
-        </li>
-    </ul>
+        <a href="myhabittracker.html"> my habit tracker</a>
+        <i>automatically updated</i>
     </p>
 
 </body>
