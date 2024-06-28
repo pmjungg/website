@@ -1,7 +1,9 @@
 h1,
 p,
 pre,
-span {
+span,
+ul,
+li {
     text-align: center;
 }
 
