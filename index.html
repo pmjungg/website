@@ -7,6 +7,26 @@
     <title>
         PAULINE JUNG
     </title>
+
+    <!-- add time zone script -->
+    <script type="text/javascript">
+        // declare time zone formatting
+        let options = {
+            timeZone: 'US/Eastern',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+        },
+        formatter = new Intl.DateTimeFormat([], options);
+    
+        // set time
+        setInterval(
+            () => {
+                document.querySelector("#time").innerText = formatter.format(new Date());
+            }
+        , 1000)
+    </script>
+    
 </head>
 
 <br>
@@ -26,6 +46,12 @@
 <body>
 
     <h1><i>PAULINE JUNG</i></h1>
+
+    <i>
+        <a href="https://24timezones.com/Richmond/time">Time in Richmond</a> - <span
+            id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/edt">EDT</a>
+        </i>
+    
     <p>
         <a href="info.html" alt="info"> info</a> |
         <a href="blog.html" alt="blog"> blog</a> |
