@@ -5,9 +5,9 @@ span,
 ul,
 li {
     text-align: center;
+    margin: 0px;
 }
 
 h1 {
     font-size: 60px;
-    margin: 0px;
 }
